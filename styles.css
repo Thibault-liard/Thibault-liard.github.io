@@ -333,7 +333,17 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
 .pub-year { color: var(--accent); font-size: 1.15rem; font-weight: 800; }
 .pub-meta { font-size: .92rem; }
 
-.project-card { min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end; }
+.project-card {
+  min-height: 340px;
+  padding: 1.7rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  align-content: start;
+}
 .project-card.featured {
   color: white;
   background: linear-gradient(145deg, var(--primary-strong), #1b5d7a);
@@ -341,7 +351,7 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
 }
 .project-card.featured p { color: rgba(255,255,255,.78); }
 .project-type {
-  margin-bottom: auto;
+  margin: 0 0 .5rem;
   text-transform: uppercase;
   font-size: .78rem;
   letter-spacing: .11em;
