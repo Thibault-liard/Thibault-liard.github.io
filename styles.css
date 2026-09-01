@@ -453,4 +453,5 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
   object-position: center;
   border-radius: 50%;
   display: block;
+  margin-bottom: 1.5rem;
 }
