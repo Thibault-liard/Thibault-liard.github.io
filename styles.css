@@ -493,6 +493,35 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
     grid-template-columns: 1fr;
   }
 }
+.publication-group {
+  margin-top: 3rem;
+}
+
+.publication-category {
+  margin-bottom: 1.5rem;
+  padding-bottom: .7rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.6rem;
+}
+
+.publication-items {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.publication-items li {
+  padding: .8rem 0 .8rem .5rem;
+  color: var(--muted);
+}
+
+.publication-items strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.publication-items em {
+  color: var(--text);
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
