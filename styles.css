@@ -532,7 +532,37 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
 .publication-items em {
   color: var(--text);
 }
+.academic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
 
+.academic-block {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.academic-subsection {
+  margin-top: 1.4rem;
+}
+
+.academic-subsection h3 {
+  margin-bottom: .4rem;
+}
+
+.academic-subsection p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .academic-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
