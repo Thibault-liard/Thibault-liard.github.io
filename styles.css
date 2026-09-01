@@ -341,7 +341,7 @@ html:not([data-theme="dark"]) .button.primary { color: #fff; }
 }
 .project-card.featured p { color: rgba(255,255,255,.78); }
 .project-type {
-  margin: 0 0 .5rem;
+  margin-bottom: auto;
   text-transform: uppercase;
   font-size: .78rem;
   letter-spacing: .11em;
